@@ -26,5 +26,5 @@ jobs:
       - run: pnpm build --filter action-release-changeset
 
       - uses: ./action-release-changeset
-        env:
-          GITHUB_TOKEN: ${ steps.app-token.outputs.token }}
+        with:
+          token: ${ steps.app-token.outputs.token }}
