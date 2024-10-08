@@ -5,6 +5,6 @@ export default defineConfig({
   platform: "node",
   output: {
     format: "cjs",
-    entryFileNames: "main.cjs"
+    entryFileNames: "main.cjs",
   },
 });
