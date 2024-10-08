@@ -1,0 +1,32 @@
+name: Setup
+
+description: |
+  setup fot github actions
+
+inputs:
+  token:
+    description: The token to use for the setup.
+    required: true
+  bot-app-slug:
+    description: The app slug for the bot.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Git User
+      shell: bash
+      run: |
+        user_name=${{ inputs.bot-app-slug }}[bot]
+        user_email=$(gh api "/users/${{ inputs.bot-app-slug }}[bot]" --jq .id)+${{ inputs.bot-app-slug }}[bot]@users.noreply.github.com
+        echo "Setting up git user: $user_name <$user_email>"
+        git config --global user.name $user_name
+        git config --global user.email $user_email
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+    - uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # v4
+      with:
+        node-version-file: .node-version
+    - name: Setup pnpm
+      shell: bash
+      run: corepack enable pnpm
