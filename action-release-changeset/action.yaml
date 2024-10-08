@@ -1,0 +1,30 @@
+name: Yutaura/actions/action-release-changeset
+author: Yutaura
+description: A GitHub Action to release changesets
+
+inputs:
+  cwd:
+    description: The working directory to run the action in
+    required: false
+    default: .
+  commit-message:
+    description: The commit message to use when committing the changeset
+    required: false
+  pr-title:
+    description: The title of the pull request
+    required: false
+  token:
+    description: The GitHub token to use for authentication
+    required: true
+  setup-git-user:
+    description: Whether to set up the git user
+    required: false
+    default: "true"
+
+outputs:
+  pr-number:
+    description: The number of the pull request that was created
+
+runs:
+  using: node20
+  main: dist/main.js

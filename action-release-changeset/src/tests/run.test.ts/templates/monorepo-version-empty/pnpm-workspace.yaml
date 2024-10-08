@@ -1,0 +1,4 @@
+packages:
+  - "."
+  - "action-1"
+  - "action-2"

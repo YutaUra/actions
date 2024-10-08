@@ -1,0 +1,34 @@
+{
+  "name": "action-release-changeset",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "rolldown -c rolldown.config.mjs"
+  },
+  "keywords": [],
+  "author": "YutaUra",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "1.10.1",
+    "@actions/exec": "1.1.1",
+    "@actions/github": "6.0.0",
+    "@changesets/read": "0.6.1",
+    "@manypkg/get-packages": "2.2.2",
+    "mdast-util-to-string": "4.0.0",
+    "prettier": "3.3.3",
+    "remark-parse": "11.0.0",
+    "remark-stringify": "11.0.0",
+    "resolve-from": "5.0.0",
+    "semver": "7.6.3",
+    "unified": "11.0.5"
+  },
+  "devDependencies": {
+    "@changesets/types": "6.0.0",
+    "@tsconfig/strictest": "2.0.5",
+    "@types/node": "22.7.4",
+    "@types/semver": "7.5.8",
+    "glob": "11.0.0",
+    "rolldown": "0.13.2",
+    "typescript": "5.6.2"
+  }
+}
