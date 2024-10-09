@@ -27,5 +27,5 @@ jobs:
 
       - uses: ./action-release-changeset
         with:
-          token: ${ steps.app-token.outputs.token }}
+          token: ${{ steps.app-token.outputs.token }}
           setup-git-user: false
