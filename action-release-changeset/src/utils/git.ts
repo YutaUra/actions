@@ -77,7 +77,7 @@ export const push = async (
       `HEAD:${remoteBranch}`,
       "--force",
     ],
-    { cwd: cwd },
+    { cwd },
   );
 };
 
