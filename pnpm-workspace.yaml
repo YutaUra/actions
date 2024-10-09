@@ -1,2 +1,3 @@
 packages:
+  - .
   - "action-release-changeset"
