@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.4
+
+### Patch Changes
+
+- cb6ddf3: Update all non-major dependencies
+
 ## 0.0.3
 
 ## 0.0.2
