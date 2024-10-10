@@ -81,11 +81,7 @@ export const runVersion = async (inputs: VersionInput) => {
       body: prBody,
     });
     if (inputs.autoMerge) {
-      await git.autoMerge(
-        data.number.toString(),
-        inputs.context,
-        inputs.octokit,
-      );
+      await git.autoMerge(data.number, inputs.context, inputs.octokit);
     }
     return {
       pullRequestNumber: data.number,
@@ -104,11 +100,7 @@ export const runVersion = async (inputs: VersionInput) => {
   });
 
   if (inputs.autoMerge) {
-    await git.autoMerge(
-      pullRequest.number.toString(),
-      inputs.context,
-      inputs.octokit,
-    );
+    await git.autoMerge(pullRequest.number, inputs.context, inputs.octokit);
   }
   return {
     pullRequestNumber: pullRequest.number,

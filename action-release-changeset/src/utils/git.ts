@@ -102,7 +102,7 @@ export const resetHard = async (cwd: string, target: string) => {
 };
 
 export const autoMerge = async (
-  prNumber: string,
+  prNumber: number,
   context: Context,
   octokit: ReturnType<typeof getOctokit>,
 ) => {
