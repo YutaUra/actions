@@ -136,3 +136,10 @@ export const autoMerge = async (
     { pullRequestId: pullRequest.id },
   );
 };
+
+export const isDirty = async (cwd: string) => {
+  const { stdout } = await getExecOutput("git", ["status", "--porcelain"], {
+    cwd,
+  });
+  return stdout.trim().length > 0;
+};

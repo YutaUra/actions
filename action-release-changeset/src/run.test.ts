@@ -130,6 +130,7 @@ describe("run", () => {
       } as unknown as Inputs["octokit"],
       changesetCliInstallDir: join(__dirname, "../.."),
       autoMerge: false,
+      preTagScript: "",
     }) satisfies Omit<Inputs, "context">;
 
   describe("multiple actions", () => {

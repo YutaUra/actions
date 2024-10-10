@@ -40,6 +40,7 @@ jobs:
 | `token`          |                  | The GitHub token      |
 | `setup-git-user` | `true`           | Setup git user        |
 | `auto-merge`     | `false`          | Auto merge PR         |
+| `pre-tag-script` |                  | Pre tag script        |
 
 ### Outputs
 

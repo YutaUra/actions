@@ -19,6 +19,7 @@ const main = async (): Promise<void> => {
     changesetCliInstallDir: cwd,
     setupGitUser,
     autoMerge: getBooleanInput("auto-merge"),
+    preTagScript: getInput("pre-tag-script"),
   });
 };
 

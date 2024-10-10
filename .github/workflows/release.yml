@@ -30,3 +30,6 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           setup-git-user: false
           auto-merge: true
+          pre-tag-script: |
+            pnpm build
+            echo "!dist" >> .gitignore

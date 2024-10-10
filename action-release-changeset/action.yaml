@@ -24,6 +24,9 @@ inputs:
     description: Whether to automatically merge the pull request
     required: false
     default: "false"
+  pre-tag-script:
+    description: A script to run before tagging the release
+    required: false
 
 outputs:
   pr-number:
