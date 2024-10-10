@@ -22,5 +22,11 @@
     "formatter": {
       "quoteStyle": "double"
     }
+  },
+  "graphql": {
+    "formatter": {},
+    "linter": {
+      "enabled": true
+    }
   }
 }
