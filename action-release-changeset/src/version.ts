@@ -81,10 +81,10 @@ export const runVersion = async (inputs: VersionInput) => {
       body: prBody,
     });
     if (inputs.autoMerge) {
-      await exec(
-        "gh",
-        ["pr", "merge", "--merge", "--auto", data.number.toString()],
-        { cwd: inputs.cwd, env: { GH_TOKEN: inputs.token } },
+      await git.autoMerge(
+        data.number.toString(),
+        inputs.context,
+        inputs.octokit,
       );
     }
     return {
@@ -104,10 +104,10 @@ export const runVersion = async (inputs: VersionInput) => {
   });
 
   if (inputs.autoMerge) {
-    await exec(
-      "gh",
-      ["pr", "merge", "--merge", "--auto", pullRequest.number.toString()],
-      { cwd: inputs.cwd, env: { GH_TOKEN: inputs.token } },
+    await git.autoMerge(
+      pullRequest.number.toString(),
+      inputs.context,
+      inputs.octokit,
     );
   }
   return {

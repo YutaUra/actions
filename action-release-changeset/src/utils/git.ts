@@ -1,5 +1,7 @@
 import { setSecret } from "@actions/core";
 import { exec, getExecOutput } from "@actions/exec";
+import type { getOctokit } from "@actions/github";
+import type { Context } from "@actions/github/lib/context";
 
 const DEFAULT_GITHUB_ACTION_NAME = "github-actions[bot]";
 const DEFAULT_GITHUB_ACTION_EMAIL =
@@ -97,4 +99,40 @@ export const switchBranch = async (cwd: string, branch: string) => {
 
 export const resetHard = async (cwd: string, target: string) => {
   await exec("git", ["reset", "--hard", target], { cwd });
+};
+
+export const autoMerge = async (
+  prNumber: string,
+  context: Context,
+  octokit: ReturnType<typeof getOctokit>,
+) => {
+  const {
+    repository: { pullRequest },
+  } = await octokit.graphql<{ repository: { pullRequest: { id: string } } }>(
+    `
+    query GetPullRequest($name: String!, $owner: String!, $prNumber: Int!) {
+      repository(name: $name, owner: $owner) {
+        pullRequest(number: 49) {
+          id
+        }
+      } 
+    } 
+`,
+    {
+      owner: context.repo.owner,
+      name: context.repo.repo,
+      prNumber: prNumber,
+    },
+  );
+
+  await octokit.graphql<{ repository: { pullRequest: { id: string } } }>(
+    `
+    mutation EnableAutoMerge($pullRequestId: ID!) {
+      enablePullRequestAutoMerge(input: {pullRequestId: $pullRequestId, mergeMethod: MERGE}) {
+        clientMutationId
+      }
+    }
+`,
+    { pullRequestId: pullRequest.id },
+  );
 };
