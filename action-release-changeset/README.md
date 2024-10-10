@@ -39,6 +39,7 @@ jobs:
 | `pr-title`       | `Release Action` | The title of PR       |
 | `token`          |                  | The GitHub token      |
 | `setup-git-user` | `true`           | Setup git user        |
+| `auto-merge`     | `false`          | Auto merge PR         |
 
 ### Outputs
 
