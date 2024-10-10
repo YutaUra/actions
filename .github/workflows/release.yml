@@ -29,3 +29,4 @@ jobs:
         with:
           token: ${{ steps.app-token.outputs.token }}
           setup-git-user: false
+          auto-merge: true

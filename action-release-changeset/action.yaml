@@ -20,6 +20,10 @@ inputs:
     description: Whether to set up the git user
     required: false
     default: "true"
+  auto-merge:
+    description: Whether to automatically merge the pull request
+    required: false
+    default: "false"
 
 outputs:
   pr-number:

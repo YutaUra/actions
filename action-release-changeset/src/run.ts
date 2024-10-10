@@ -23,6 +23,7 @@ export type Inputs = {
   readonly octokit: ReturnType<typeof getOctokit>;
   readonly changesetCliInstallDir: string;
   readonly setupGitUser: boolean;
+  readonly autoMerge: boolean;
 };
 
 export const run = async (inputs: Inputs) => {

@@ -18,6 +18,7 @@ const main = async (): Promise<void> => {
     octokit: getOctokit(token),
     changesetCliInstallDir: cwd,
     setupGitUser,
+    autoMerge: getBooleanInput("auto-merge"),
   });
 };
 

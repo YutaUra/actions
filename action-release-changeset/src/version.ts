@@ -19,6 +19,7 @@ type VersionInput = {
   readonly octokit: ReturnType<typeof getOctokit>;
   readonly token: string;
   readonly prTitle: string;
+  readonly autoMerge: boolean;
 };
 
 export const runVersion = async (inputs: VersionInput) => {
@@ -79,6 +80,13 @@ export const runVersion = async (inputs: VersionInput) => {
       title: inputs.prTitle,
       body: prBody,
     });
+    if (inputs.autoMerge) {
+      await exec(
+        "gh",
+        ["pr", "merge", "--merge", "--auto", data.number.toString()],
+        { cwd: inputs.cwd, env: { GH_TOKEN: inputs.token } },
+      );
+    }
     return {
       pullRequestNumber: data.number,
     };
@@ -95,6 +103,13 @@ export const runVersion = async (inputs: VersionInput) => {
     state: "open",
   });
 
+  if (inputs.autoMerge) {
+    await exec(
+      "gh",
+      ["pr", "merge", "--merge", "--auto", pullRequest.number.toString()],
+      { cwd: inputs.cwd, env: { GH_TOKEN: inputs.token } },
+    );
+  }
   return {
     pullRequestNumber: pullRequest.number,
   };
