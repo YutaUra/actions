@@ -24,6 +24,7 @@ export type Inputs = {
   readonly changesetCliInstallDir: string;
   readonly setupGitUser: boolean;
   readonly autoMerge: boolean;
+  readonly preTagScript: string;
 };
 
 export const run = async (inputs: Inputs) => {

@@ -1,5 +1,7 @@
+import { exec } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
+import { promisify } from "node:util";
 import * as core from "@actions/core";
 import type { getOctokit } from "@actions/github";
 import type { Context } from "@actions/github/lib/context";
@@ -7,11 +9,14 @@ import { getPackages } from "@manypkg/get-packages";
 import { escapeMarkdownString, getChangelogEntry } from "./utils";
 import * as git from "./utils/git";
 
+const execAsync = promisify(exec);
+
 export type Inputs = {
   readonly cwd: string;
   readonly setupGitUser: boolean;
   readonly octokit: ReturnType<typeof getOctokit>;
   readonly context: Context;
+  readonly preTagScript: string;
 };
 
 export const runPublish = async (inputs: Inputs) => {
@@ -36,6 +41,13 @@ export const runPublish = async (inputs: Inputs) => {
   }
   if (inputs.setupGitUser) {
     await git.configure(inputs.cwd);
+  }
+
+  if (inputs.preTagScript.trim().length > 0) {
+    await execAsync(inputs.preTagScript.trim(), { cwd: inputs.cwd });
+    if (await git.isDirty(inputs.cwd)) {
+      await git.commit(inputs.cwd, "pre tag script result", ".");
+    }
   }
 
   await git.tag(inputs.cwd, `v${version}`);
