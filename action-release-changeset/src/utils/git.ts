@@ -112,7 +112,7 @@ export const autoMerge = async (
     `
     query GetPullRequest($name: String!, $owner: String!, $prNumber: Int!) {
       repository(name: $name, owner: $owner) {
-        pullRequest(number: 49) {
+        pullRequest(number: $prNumber) {
           id
         }
       } 
