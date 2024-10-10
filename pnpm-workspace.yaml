@@ -1,3 +1,4 @@
 packages:
   - .
   - "action-release-changeset"
+  - "renovate-changeset"
