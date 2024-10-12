@@ -51,7 +51,7 @@ export const runVersion = async (inputs: VersionInput) => {
   }
   await git.commit(
     inputs.cwd,
-    inputs["commit-message"] ?? "Version Action",
+    inputs["commit-message"] || "Version Action",
     ".",
   );
   await git.push(inputs.cwd, versionBranch, inputs.token);
@@ -76,7 +76,7 @@ export const runVersion = async (inputs: VersionInput) => {
       ...inputs.context.repo,
       base: branch,
       head: versionBranch,
-      title: inputs["pr-title"] ?? "Release Action",
+      title: inputs["pr-title"] || "Release Action",
       body: prBody,
     });
     if (inputs["auto-merge"]) {
@@ -93,7 +93,7 @@ export const runVersion = async (inputs: VersionInput) => {
   await inputs.octokit.rest.pulls.update({
     ...inputs.context.repo,
     pull_number: pullRequest.number,
-    title: inputs["pr-title"] ?? "Release Action",
+    title: inputs["pr-title"] || "Release Action",
     body: prBody,
     state: "open",
   });
