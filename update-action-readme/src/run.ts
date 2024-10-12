@@ -64,7 +64,7 @@ export const run = async (inputs: Inputs) => {
   }
 
   // commit, pull --rebase and push
-  await git.commitAll(inputs.cwd, "chore: update changeset");
+  await git.commitAll(inputs.cwd, "chore: update readme");
   await git.pullRebase(inputs.cwd, inputs.token, headRef);
   await git.push(inputs.cwd, inputs.token, headRef, true);
 
