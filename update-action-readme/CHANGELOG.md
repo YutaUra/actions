@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.8
+
+### Patch Changes
+
+- bf761e1: update inputs and outputs
+
 ## 0.0.7
 
 ### Patch Changes
