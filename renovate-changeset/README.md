@@ -32,11 +32,18 @@ jobs:
 ### Inputs
 
 <!-- update-action-readme:inputs:start -->
+| Name           | Default | Description                                |
+| -------------- | ------- | ------------------------------------------ |
+| cwd            | .       | The working directory to run the action in |
+| token          |         | The GitHub token to use for authentication |
+| setup-git-user | true    | Whether to set up the git user             |
 <!-- update-action-readme:inputs:end -->
 
 ### Outputs
 
 <!-- update-action-readme:outputs:start -->
+| Name | Description |
+| ---- | ----------- |
 <!-- update-action-readme:outputs:end -->
 
 ## Development
