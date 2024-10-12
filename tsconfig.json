@@ -8,5 +8,6 @@
     "types": ["vitest/globals"],
     "noPropertyAccessFromIndexSignature": false,
     "exactOptionalPropertyTypes": false
-  }
+  },
+  "exclude": ["*/src/generated"]
 }

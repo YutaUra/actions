@@ -1,0 +1,20 @@
+name: Yutaura/actions/update-action-readme
+author: Yutaura
+description: A GitHub Action to update the README of an action
+
+inputs:
+  cwd:
+    description: The working directory to run the action in
+    required: false
+    default: .
+  token:
+    description: The GitHub token to use for authentication
+    required: true
+  setup-git-user:
+    description: Whether to set up the git user
+    required: false
+    default: "true"
+
+runs:
+  using: node20
+  main: dist/main.cjs

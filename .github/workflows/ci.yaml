@@ -1,4 +1,4 @@
-name: test
+name: CI
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  test:
+  CI:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/create-github-app-token@5d869da34e18e7287c1daad50e0b8ea0f506ce69 # v1.11.0
@@ -25,6 +25,12 @@ jobs:
       - run: pnpm install
       - run: pnpm check
       - run: pnpm test
+
+      - run: pnpm build --filter update-action-readme
+      - uses: ./update-action-readme
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          setup-git-user: false
 
       - uses: int128/update-generated-files-action@757376506709ed3d87f14a80ca28a98736d52236 # v2.55.0
         with:
