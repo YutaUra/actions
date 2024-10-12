@@ -1,3 +1,5 @@
+import type { GithubAction } from "github-action-yaml";
+import { markdownTable } from "markdown-table";
 import remarkParse from "remark-parse";
 import remarkStringify from "remark-stringify";
 import { unified } from "unified";
@@ -11,11 +13,13 @@ const processor = unified().use(remarkParse).use(remarkStringify);
 export type UpdateReadmeOptions = {
   readonly readme: string;
   readonly replaceActionVersions: readonly ReplaceActionVersion[];
+  readonly actionYaml: GithubAction;
 };
 
 export const updateReadme = ({
   readme,
   replaceActionVersions,
+  actionYaml,
 }: UpdateReadmeOptions) => {
   const tree = processor.parse(readme);
 
@@ -26,5 +30,31 @@ export const updateReadme = ({
     code.value = updateYaml({ workflow: code.value, replaceActionVersions });
   });
 
-  return processor.stringify(tree);
+  const versionReadme = processor.stringify(tree);
+
+  return versionReadme
+    .replace(
+      /(?<=<!-- update-action-readme:inputs:start -->\n).*(?=\n<!-- update-action-readme:inputs:end -->)/s,
+      markdownTable([
+        ["Name", "Default", "Description"],
+        ...Object.entries(actionYaml.inputs ?? {})
+          .filter(
+            ([, value]) => typeof value.deprecationMessage === "undefined",
+          )
+          .map(([name, value]) => [
+            name,
+            value.default ?? "",
+            value.description ?? "",
+          ]),
+      ]),
+    )
+    .replace(
+      /(?<=<!-- update-action-readme:outputs:start -->\n).*(?=\n<!-- update-action-readme:outputs:end -->)/s,
+      markdownTable([
+        ["Name", "Description"],
+        ...Object.entries(
+          (actionYaml.outputs ?? {}) as Record<string, { description: string }>,
+        ).map(([name, value]) => [name, value.description ?? ""]),
+      ]),
+    );
 };

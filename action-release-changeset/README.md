@@ -33,17 +33,26 @@ jobs:
 
 ### Inputs
 
-| Name             | Default          | Description           |
-| ---------------- | ---------------- | --------------------- |
-| `cwd`            | `.`              | The working directory |
-| `commit-message` | `Version Action` | The commit message    |
-| `pr-title`       | `Release Action` | The title of PR       |
-| `token`          |                  | The GitHub token      |
-| `setup-git-user` | `true`           | Setup git user        |
-| `auto-merge`     | `false`          | Auto merge PR         |
-| `pre-tag-script` |                  | Pre tag script        |
+<!-- update-action-readme:inputs:start -->
+| Name           | Default | Description                                             |
+| -------------- | ------- | ------------------------------------------------------- |
+| cwd            | .       | The working directory to run the action in              |
+| commit-message |         | The commit message to use when committing the changeset |
+| pr-title       |         | The title of the pull request                           |
+| token          |         | The GitHub token to use for authentication              |
+| setup-git-user | true    | Whether to set up the git user                          |
+| auto-merge     | false   | Whether to automatically merge the pull request         |
+| pre-tag-script |         | A script to run before tagging the release              |
+<!-- update-action-readme:inputs:end -->
 
 ### Outputs
+
+<!-- update-action-readme:outputs:start -->
+| Name      | Description                                     |
+| --------- | ----------------------------------------------- |
+| pr-number | The number of the pull request that was created |
+| published | Whether the changeset was published             |
+<!-- update-action-readme:outputs:end -->
 
 ## Development
 

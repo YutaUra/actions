@@ -5,6 +5,8 @@ import { join } from "node:path";
 import { info } from "@actions/core";
 import type { Context } from "@actions/github/lib/context";
 import { getPackages } from "@manypkg/get-packages";
+import type { GithubAction } from "github-action-yaml";
+import { parse } from "yaml";
 import type { ActionInputs } from "./main";
 import { updateReadme } from "./update/update-readme";
 import * as git from "./utils/git";
@@ -30,15 +32,24 @@ export const run = async (inputs: Inputs) => {
   for (const pkg of packages) {
     const readmePath = join(pkg.dir, "README.md");
     if (!existsSync(readmePath)) continue;
-
     const readme = await readFile(readmePath, "utf-8");
+    const actionYamlPath = existsSync(join(pkg.dir, "action.yml"))
+      ? join(pkg.dir, "action.yml")
+      : join(pkg.dir, "action.yaml");
+    const actionYaml = parse(
+      await readFile(actionYamlPath, "utf-8"),
+    ) as GithubAction;
+
+    // update action version
     const updatedReadme = updateReadme({
       readme,
       replaceActionVersions: packages.map((pkg) => ({
         name: `${inputs.context.repo.owner}/${inputs.context.repo.repo}${pkg.relativeDir === "" ? "" : `/${pkg.relativeDir}`}`,
         version: pkg.packageJson.version,
       })),
+      actionYaml,
     });
+
     await writeFile(readmePath, updatedReadme);
   }
 
@@ -53,7 +64,7 @@ export const run = async (inputs: Inputs) => {
   }
 
   // commit, pull --rebase and push
-  await git.commitAll(inputs.cwd, "chore: update changeset");
+  await git.commitAll(inputs.cwd, "chore: update readme");
   await git.pullRebase(inputs.cwd, inputs.token, headRef);
   await git.push(inputs.cwd, inputs.token, headRef, true);
 
