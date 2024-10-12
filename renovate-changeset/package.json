@@ -20,7 +20,7 @@
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.0",
     "@manypkg/get-packages": "2.2.2",
-    "github-action-yaml": "0.0.3",
+    "github-action-yaml": "0.0.4",
     "sanitize-filename": "1.6.3"
   }
 }

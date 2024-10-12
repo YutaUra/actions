@@ -39,8 +39,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2
       github-action-yaml:
-        specifier: 0.0.3
-        version: 0.0.3(@actions/core@1.11.1)
+        specifier: 0.0.4
+        version: 0.0.4(@actions/core@1.11.1)
       mdast-util-to-string:
         specifier: 4.0.0
         version: 4.0.0
@@ -97,8 +97,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2
       github-action-yaml:
-        specifier: 0.0.3
-        version: 0.0.3(@actions/core@1.11.1)
+        specifier: 0.0.4
+        version: 0.0.4(@actions/core@1.11.1)
       sanitize-filename:
         specifier: 1.6.3
         version: 1.6.3
@@ -128,8 +128,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2
       github-action-yaml:
-        specifier: 0.0.3
-        version: 0.0.3(@actions/core@1.11.1)
+        specifier: 0.0.4
+        version: 0.0.4(@actions/core@1.11.1)
       remark-parse:
         specifier: 11.0.0
         version: 11.0.0
@@ -1011,8 +1011,8 @@ packages:
   get-func-name@2.0.2:
     resolution: {integrity: sha512-8vXOvuE167CtIc3OyItco7N/dpRtBbYOsPsXCz7X/PMnlGjYjSGuZJgM1Y7mmew7BKf9BqvLX2tnOVy1BBUsxQ==}
 
-  github-action-yaml@0.0.3:
-    resolution: {integrity: sha512-2oDvAbaZaPECY0dI5TYBGcgacE9Vo1GNdRvsYSiEX0B2DrYBzCXbYjcy2EMFz+IovlH117MNRrl1YDbhCr9hQA==}
+  github-action-yaml@0.0.4:
+    resolution: {integrity: sha512-z7tDyrbttHqcD8RvacyQevbcBggYGEdV0CiRm3dqf8X3mT6xVFFWQfpoaq4YLIFHhfbjEk3SoQyiJn4ZYJDdKg==}
     hasBin: true
     peerDependencies:
       '@actions/core': 1.11.1
@@ -2594,7 +2594,7 @@ snapshots:
 
   get-func-name@2.0.2: {}
 
-  github-action-yaml@0.0.3(@actions/core@1.11.1):
+  github-action-yaml@0.0.4(@actions/core@1.11.1):
     dependencies:
       '@actions/core': 1.11.1
       '@schemastore/github-action': 0.0.5
