@@ -17,11 +17,9 @@ export const run = async (inputs: Inputs) => {
   // fetch base ~ head commits
   ok(inputs.context.payload.pull_request, "Expected pull_request event");
   const base = inputs.context.payload.pull_request.base.sha;
-  const baseRef = inputs.context.payload.pull_request.base.ref;
   const head = inputs.context.payload.pull_request.head.sha;
   const headRef = inputs.context.payload.pull_request.head.ref;
   ok(base, "Expected base sha");
-  ok(baseRef, "Expected base ref");
   ok(head, "Expected head sha");
   ok(headRef, "Expected head ref");
   await git.fetch(inputs.cwd, inputs.token, base, head);
@@ -56,7 +54,7 @@ export const run = async (inputs: Inputs) => {
 
   // commit, pull --rebase and push
   await git.commitAll(inputs.cwd, "chore: update changeset");
-  await git.pullRebase(inputs.cwd, inputs.token, baseRef);
+  await git.pullRebase(inputs.cwd, inputs.token, headRef);
   await git.push(inputs.cwd, inputs.token, headRef, true);
 
   // pr should be updated, so this action should be failed
