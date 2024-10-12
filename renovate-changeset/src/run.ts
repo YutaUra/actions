@@ -92,7 +92,7 @@ ${title}
   // commit, pull --rebase and push
   await git.commitAll(inputs.cwd, "chore: update changeset");
   await git.pullRebase(inputs.cwd, inputs.token, baseRef);
-  await git.push(inputs.cwd, inputs.token, headRef);
+  await git.push(inputs.cwd, inputs.token, headRef, true);
 
   // pr should be updated, so this action should be failed
   throw new Error("some files are updated, this PR should be updated");
