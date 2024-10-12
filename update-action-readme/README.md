@@ -1,4 +1,4 @@
-# renovate-changeset
+# update-action-readme
 
 This is a GitHub Action to create changeset for Renovate.
 
@@ -7,8 +7,8 @@ This is a GitHub Action to create changeset for Renovate.
 To run this action, create a workflow as follows:
 
 ```yaml
-# .github/workflows/renovate-changeset.yaml
-name: create changeset for PR created by Renovate
+# .github/workflows/update-readme.yaml
+name: update README
 
 on:
   pull_request:
@@ -16,14 +16,11 @@ on:
       - main
 
 jobs:
-  update-changeset:
+  update-readme:
     runs-on: ubuntu-latest
-    if: startsWith(github.head_ref, 'renovate/') &&
-      github.event.pull_request.user.login == 'renovate[bot]' && github.actor ==
-      'renovate[bot]'
     steps:
       - uses: actions/checkout@v4
-      - uses: YutaUra/actions/renovate-changeset@0.0.5
+      - uses: YutaUra/actions/update-action-readme@0.0.5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 

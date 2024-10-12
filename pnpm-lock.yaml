@@ -107,6 +107,46 @@ importers:
         specifier: 5.6.2
         version: 5.6.2
 
+  update-action-readme:
+    dependencies:
+      '@actions/core':
+        specifier: 1.11.1
+        version: 1.11.1
+      '@actions/exec':
+        specifier: 1.1.1
+        version: 1.1.1
+      '@actions/github':
+        specifier: 6.0.0
+        version: 6.0.0
+      '@manypkg/get-packages':
+        specifier: 2.2.2
+        version: 2.2.2
+      remark-parse:
+        specifier: 11.0.0
+        version: 11.0.0
+      remark-stringify:
+        specifier: 11.0.0
+        version: 11.0.0
+      unified:
+        specifier: 11.0.5
+        version: 11.0.5
+      unist-util-visit:
+        specifier: 5.0.0
+        version: 5.0.0
+      yaml:
+        specifier: 2.5.1
+        version: 2.5.1
+    devDependencies:
+      '@types/node':
+        specifier: 22.7.4
+        version: 22.7.4
+      rolldown:
+        specifier: 0.13.2
+        version: 0.13.2
+      typescript:
+        specifier: 5.6.2
+        version: 5.6.2
+
 packages:
 
   '@actions/core@1.11.1':
@@ -1620,6 +1660,11 @@ packages:
 
   yallist@2.1.2:
     resolution: {integrity: sha512-ncTzHV7NvsQZkYe1DW7cbDLm0YpzHmZF5r/iyP3ZnQtMiJ+pjzisCiMNI+Sj+xQF5pXhSHxSB3uDbsBTzY/c2A==}
+
+  yaml@2.5.1:
+    resolution: {integrity: sha512-bLQOjaX/ADgQ20isPJRvF0iRUHIxVhYvr53Of7wGcWlO2jvtUlH5m87DsmulFVxRpNLOnI4tB6p/oh8D7kpn9Q==}
+    engines: {node: '>= 14'}
+    hasBin: true
 
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
@@ -3278,6 +3323,8 @@ snapshots:
     optional: true
 
   yallist@2.1.2: {}
+
+  yaml@2.5.1: {}
 
   yargs-parser@21.1.1:
     optional: true
