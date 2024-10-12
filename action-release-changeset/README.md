@@ -33,17 +33,13 @@ jobs:
 
 ### Inputs
 
-| Name             | Default          | Description           |
-| ---------------- | ---------------- | --------------------- |
-| `cwd`            | `.`              | The working directory |
-| `commit-message` | `Version Action` | The commit message    |
-| `pr-title`       | `Release Action` | The title of PR       |
-| `token`          |                  | The GitHub token      |
-| `setup-git-user` | `true`           | Setup git user        |
-| `auto-merge`     | `false`          | Auto merge PR         |
-| `pre-tag-script` |                  | Pre tag script        |
+<!-- update-action-readme:inputs:start -->
+<!-- update-action-readme:inputs:end -->
 
 ### Outputs
+
+<!-- update-action-readme:outputs:start -->
+<!-- update-action-readme:outputs:end -->
 
 ## Development
 

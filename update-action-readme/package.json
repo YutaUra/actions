@@ -11,6 +11,7 @@
   "author": "YutaUra",
   "license": "ISC",
   "devDependencies": {
+    "@schemastore/github-action": "0.0.5",
     "@types/node": "22.7.4",
     "rolldown": "0.13.2",
     "typescript": "5.6.2"
@@ -21,8 +22,10 @@
     "@actions/github": "6.0.0",
     "@manypkg/get-packages": "2.2.2",
     "github-action-yaml": "0.0.4",
+    "markdown-table": "3.0.3",
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",
+    "remove": "0.1.5",
     "unified": "11.0.5",
     "unist-util-visit": "5.0.0",
     "yaml": "2.5.1"

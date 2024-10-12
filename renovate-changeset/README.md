@@ -31,13 +31,13 @@ jobs:
 
 ### Inputs
 
-| Name             | Default | Description           |
-| ---------------- | ------- | --------------------- |
-| `cwd`            | `.`     | The working directory |
-| `token`          |         | The GitHub token      |
-| `setup-git-user` | `true`  | Setup git user        |
+<!-- update-action-readme:inputs:start -->
+<!-- update-action-readme:inputs:end -->
 
 ### Outputs
+
+<!-- update-action-readme:outputs:start -->
+<!-- update-action-readme:outputs:end -->
 
 ## Development
 
