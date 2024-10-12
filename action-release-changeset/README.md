@@ -24,10 +24,11 @@ jobs:
       # build your github action
       # - run: pnpm build
 
-      - uses: YutaUra/actions/action-release-changeset
+      - uses: YutaUra/actions/action-release-changeset@0.0.5
         env:
           # if auto-merge is true, you need to set GITHUB_TOKEN
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 ```
 
 ### Inputs
