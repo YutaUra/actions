@@ -6,14 +6,12 @@ import { info } from "@actions/core";
 import type { Context } from "@actions/github/lib/context";
 import { getPackages } from "@manypkg/get-packages";
 import sanitize from "sanitize-filename";
+import type { ActionInputs } from "./main";
 import { isPackageJson, isPackageLockFile } from "./utils";
 import * as git from "./utils/git";
 
-export type Inputs = {
+export type Inputs = ActionInputs & {
   readonly context: Context;
-  readonly token: string;
-  readonly cwd: string;
-  readonly setupGitUser: boolean;
 };
 
 export const run = async (inputs: Inputs) => {
@@ -87,7 +85,7 @@ ${title}
     return;
   }
 
-  if (inputs.setupGitUser) {
+  if (inputs["setup-git-user"]) {
     await git.configure(inputs.cwd);
   }
 

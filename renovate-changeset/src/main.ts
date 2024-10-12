@@ -1,16 +1,15 @@
-import { resolve } from "node:path";
-import { getBooleanInput, getInput, setFailed } from "@actions/core";
+import { setFailed } from "@actions/core";
 import { context } from "@actions/github";
+import { parseInputs } from "./generated/github-action";
 import { run } from "./run";
 
-const main = async () => {
-  const token = getInput("token", { required: true });
+const inputs = parseInputs({ "setup-git-user": { type: "boolean" } });
+export type ActionInputs = typeof inputs;
 
+const main = async () => {
   return run({
     context,
-    token,
-    cwd: resolve(getInput("cwd", { required: true })),
-    setupGitUser: getBooleanInput("setup-git-user"),
+    ...inputs,
   });
 };
 

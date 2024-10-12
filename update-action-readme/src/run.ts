@@ -5,14 +5,12 @@ import { join } from "node:path";
 import { info } from "@actions/core";
 import type { Context } from "@actions/github/lib/context";
 import { getPackages } from "@manypkg/get-packages";
+import type { ActionInputs } from "./main";
 import { updateReadme } from "./update/update-readme";
 import * as git from "./utils/git";
 
-export type Inputs = {
+export type Inputs = ActionInputs & {
   readonly context: Context;
-  readonly token: string;
-  readonly cwd: string;
-  readonly setupGitUser: boolean;
 };
 
 export const run = async (inputs: Inputs) => {
@@ -52,7 +50,7 @@ export const run = async (inputs: Inputs) => {
     return;
   }
 
-  if (inputs.setupGitUser) {
+  if (inputs["setup-git-user"]) {
     await git.configure(inputs.cwd);
   }
 

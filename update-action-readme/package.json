@@ -3,6 +3,8 @@
   "version": "0.0.6",
   "type": "module",
   "scripts": {
+    "generate": "github-action-yaml ./src/generated/github-action.ts",
+    "prebuild": "pnpm generate",
     "build": "rolldown -c rolldown.config.mjs"
   },
   "keywords": [],
@@ -18,6 +20,7 @@
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.0",
     "@manypkg/get-packages": "2.2.2",
+    "github-action-yaml": "0.0.3",
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",
     "unified": "11.0.5",
