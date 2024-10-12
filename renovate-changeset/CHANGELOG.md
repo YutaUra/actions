@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.7
+
+### Patch Changes
+
+- e6881c3: use github-action-yaml
+
 ## 0.0.6
 
 ## 0.0.5
