@@ -38,6 +38,9 @@ importers:
       '@manypkg/get-packages':
         specifier: 2.2.2
         version: 2.2.2
+      github-action-yaml:
+        specifier: 0.0.4
+        version: 0.0.4(@actions/core@1.11.1)
       mdast-util-to-string:
         specifier: 4.0.0
         version: 4.0.0
@@ -93,6 +96,9 @@ importers:
       '@manypkg/get-packages':
         specifier: 2.2.2
         version: 2.2.2
+      github-action-yaml:
+        specifier: 0.0.4
+        version: 0.0.4(@actions/core@1.11.1)
       sanitize-filename:
         specifier: 1.6.3
         version: 1.6.3
@@ -121,6 +127,9 @@ importers:
       '@manypkg/get-packages':
         specifier: 2.2.2
         version: 2.2.2
+      github-action-yaml:
+        specifier: 0.0.4
+        version: 0.0.4(@actions/core@1.11.1)
       remark-parse:
         specifier: 11.0.0
         version: 11.0.0
@@ -697,6 +706,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@schemastore/github-action@0.0.5':
+    resolution: {integrity: sha512-gi5n12CpqVZdRZMyhjIIptabx9MaGh5KqBBZerqyaHYTM0kDTj6nQn+MYL5f6PZt7TLYvDldRQeAjZpAB66Fjw==}
+
   '@tsconfig/strictest@2.0.5':
     resolution: {integrity: sha512-ec4tjL2Rr0pkZ5hww65c+EEPYwxOi4Ryv+0MtjeaSQRJyq322Q27eOQiFbuNgw2hpL4hB1/W/HBGk3VKS43osg==}
 
@@ -871,6 +883,10 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
+
   cookie@0.5.0:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
     engines: {node: '>= 0.6'}
@@ -994,6 +1010,12 @@ packages:
 
   get-func-name@2.0.2:
     resolution: {integrity: sha512-8vXOvuE167CtIc3OyItco7N/dpRtBbYOsPsXCz7X/PMnlGjYjSGuZJgM1Y7mmew7BKf9BqvLX2tnOVy1BBUsxQ==}
+
+  github-action-yaml@0.0.4:
+    resolution: {integrity: sha512-z7tDyrbttHqcD8RvacyQevbcBggYGEdV0CiRm3dqf8X3mT6xVFFWQfpoaq4YLIFHhfbjEk3SoQyiJn4ZYJDdKg==}
+    hasBin: true
+    peerDependencies:
+      '@actions/core': 1.11.1
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -2255,6 +2277,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.22.5':
     optional: true
 
+  '@schemastore/github-action@0.0.5': {}
+
   '@tsconfig/strictest@2.0.5': {}
 
   '@tybys/wasm-util@0.9.0':
@@ -2427,6 +2451,8 @@ snapshots:
 
   color-name@1.1.4: {}
 
+  commander@12.1.0: {}
+
   cookie@0.5.0:
     optional: true
 
@@ -2567,6 +2593,13 @@ snapshots:
     optional: true
 
   get-func-name@2.0.2: {}
+
+  github-action-yaml@0.0.4(@actions/core@1.11.1):
+    dependencies:
+      '@actions/core': 1.11.1
+      '@schemastore/github-action': 0.0.5
+      commander: 12.1.0
+      yaml: 2.5.1
 
   glob-parent@5.1.2:
     dependencies:

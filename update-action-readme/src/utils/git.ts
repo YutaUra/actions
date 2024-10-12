@@ -68,10 +68,19 @@ export const pullRebase = async (cwd: string, token: string, base: string) => {
   });
 };
 
-export const push = async (cwd: string, token: string, head: string) => {
-  return await execWithToken(token, ["push", "origin", `HEAD:${head}`], {
-    cwd,
-  });
+export const push = async (
+  cwd: string,
+  token: string,
+  head: string,
+  force = false,
+) => {
+  return await execWithToken(
+    token,
+    ["push", "origin", `HEAD:${head}`, ...(force ? ["--force"] : [])],
+    {
+      cwd,
+    },
+  );
 };
 
 export const checkout = async (cwd: string, branch: string) => {

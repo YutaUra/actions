@@ -112,10 +112,10 @@ describe("run", () => {
   const inputs = ({ cwd }: { cwd: string }) =>
     ({
       cwd,
-      commitMessage: "Version Action",
-      prTitle: "Release Action",
+      "commit-message": "Version Action",
+      "pr-title": "Release Action",
       token: "test-token",
-      setupGitUser: true,
+      "setup-git-user": true,
       octokit: {
         rest: {
           pulls: {
@@ -129,8 +129,8 @@ describe("run", () => {
         },
       } as unknown as Inputs["octokit"],
       changesetCliInstallDir: join(__dirname, "../.."),
-      autoMerge: false,
-      preTagScript: "",
+      "auto-merge": false,
+      "pre-tag-script": "",
     }) satisfies Omit<Inputs, "context">;
 
   describe("multiple actions", () => {

@@ -6,17 +6,15 @@ import * as core from "@actions/core";
 import type { getOctokit } from "@actions/github";
 import type { Context } from "@actions/github/lib/context";
 import { getPackages } from "@manypkg/get-packages";
+import type { ActionInputs } from "./main";
 import { escapeMarkdownString, getChangelogEntry } from "./utils";
 import * as git from "./utils/git";
 
 const execAsync = promisify(exec);
 
-export type Inputs = {
-  readonly cwd: string;
-  readonly setupGitUser: boolean;
+export type Inputs = ActionInputs & {
   readonly octokit: ReturnType<typeof getOctokit>;
   readonly context: Context;
-  readonly preTagScript: string;
 };
 
 export const runPublish = async (inputs: Inputs) => {
@@ -39,12 +37,12 @@ export const runPublish = async (inputs: Inputs) => {
     core.info("Skipping release");
     return { published: false };
   }
-  if (inputs.setupGitUser) {
+  if (inputs["setup-git-user"]) {
     await git.configure(inputs.cwd);
   }
 
-  if (inputs.preTagScript.trim().length > 0) {
-    await execAsync(inputs.preTagScript.trim(), { cwd: inputs.cwd });
+  if (inputs["pre-tag-script"] && inputs["pre-tag-script"].trim().length > 0) {
+    await execAsync(inputs["pre-tag-script"].trim(), { cwd: inputs.cwd });
     if (await git.isDirty(inputs.cwd)) {
       await git.commit(inputs.cwd, "pre tag script result", ".");
     }

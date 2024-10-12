@@ -6,20 +6,15 @@ import type { Context } from "@actions/github/lib/context";
 import { getPackages } from "@manypkg/get-packages";
 import resolveFrom from "resolve-from";
 import { lt } from "semver";
+import type { ActionInputs } from "./main";
 import { getVersionPrBody, requireChangesetsCliPkgJson } from "./utils";
 import * as git from "./utils/git";
 
-type VersionInput = {
-  readonly cwd: string;
+type VersionInput = ActionInputs & {
   readonly branch?: string;
   readonly context: Context;
   readonly changesetCliInstallDir: string;
-  readonly setupGitUser: boolean;
-  readonly commitMessage: string;
   readonly octokit: ReturnType<typeof getOctokit>;
-  readonly token: string;
-  readonly prTitle: string;
-  readonly autoMerge: boolean;
 };
 
 export const runVersion = async (inputs: VersionInput) => {
@@ -51,10 +46,14 @@ export const runVersion = async (inputs: VersionInput) => {
 
   // commit
   // configure git user
-  if (inputs.setupGitUser) {
+  if (inputs["setup-git-user"]) {
     await git.configure(inputs.cwd);
   }
-  await git.commit(inputs.cwd, inputs.commitMessage, ".");
+  await git.commit(
+    inputs.cwd,
+    inputs["commit-message"] ?? "Version Action",
+    ".",
+  );
   await git.push(inputs.cwd, versionBranch, inputs.token);
 
   // fetch PR
@@ -77,10 +76,10 @@ export const runVersion = async (inputs: VersionInput) => {
       ...inputs.context.repo,
       base: branch,
       head: versionBranch,
-      title: inputs.prTitle,
+      title: inputs["pr-title"] ?? "Release Action",
       body: prBody,
     });
-    if (inputs.autoMerge) {
+    if (inputs["auto-merge"]) {
       await git.autoMerge(data.number, inputs.context, inputs.octokit);
     }
     return {
@@ -94,12 +93,12 @@ export const runVersion = async (inputs: VersionInput) => {
   await inputs.octokit.rest.pulls.update({
     ...inputs.context.repo,
     pull_number: pullRequest.number,
-    title: inputs.prTitle,
+    title: inputs["pr-title"] ?? "Release Action",
     body: prBody,
     state: "open",
   });
 
-  if (inputs.autoMerge) {
+  if (inputs["auto-merge"]) {
     await git.autoMerge(pullRequest.number, inputs.context, inputs.octokit);
   }
   return {
