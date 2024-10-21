@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.10
+
+### Patch Changes
+
+- 6c1893d: chore(deps): update all non-major dependencies
+
 ## 0.0.9
 
 ### Patch Changes

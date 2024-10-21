@@ -1,6 +1,6 @@
 {
   "name": "renovate-changeset",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "scripts": {
     "generate": "github-action-yaml ./src/generated/github-action.ts",
