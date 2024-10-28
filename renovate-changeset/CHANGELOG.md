@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.11
+
+### Patch Changes
+
+- b061a62: chore(deps): update all non-major dependencies
+
 ## 0.0.10
 
 ### Patch Changes
