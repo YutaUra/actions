@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.12
+
+### Patch Changes
+
+- 601bc01: chore(deps): update all non-major dependencies
+
 ## 0.0.11
 
 ### Patch Changes
