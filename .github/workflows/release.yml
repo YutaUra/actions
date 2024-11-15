@@ -23,7 +23,7 @@ jobs:
           bot-app-slug: ${{ steps.app-token.outputs.app-slug }}
 
       - run: pnpm install
-      - run: pnpm --filter action-release-changeset build
+      - run: pnpm build
 
       - uses: ./action-release-changeset
         with:
@@ -32,4 +32,4 @@ jobs:
           auto-merge: true
           pre-tag-script: |
             pnpm build
-            echo "!dist" >> .gitignore
+            echo '!dist' >> .gitignore
