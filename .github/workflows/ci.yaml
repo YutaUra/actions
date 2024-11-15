@@ -27,7 +27,7 @@ jobs:
       - run: pnpm check
       - run: pnpm test
 
-      - run: pnpm build --filter update-action-readme
+      - run: pnpm --filter update-action-readme build
       - uses: ./update-action-readme
         with:
           token: ${{ steps.app-token.outputs.token }}

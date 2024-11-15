@@ -23,7 +23,7 @@ jobs:
           bot-app-slug: ${{ steps.app-token.outputs.app-slug }}
 
       - run: pnpm install
-      - run: pnpm build --filter action-release-changeset
+      - run: pnpm --filter action-release-changeset build
 
       - uses: ./action-release-changeset
         with:
