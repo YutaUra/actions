@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.15
+
+### Patch Changes
+
+- 665e530: chore(deps): update pnpm to v9.13.2
+
 ## 0.0.14
 
 ### Patch Changes
