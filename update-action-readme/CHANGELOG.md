@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.16
+
+### Patch Changes
+
+- a5acbcc: chore(deps): update all non-major dependencies
+
 ## 0.0.15
 
 ## 0.0.14
