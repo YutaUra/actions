@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>yutaura/renovate-oss-base"
-  ],
+  "extends": ["github>yutaura/renovate-oss-base"],
   "gitIgnoredAuthors": [
     "github-actions[bot]@users.noreply.github.com",
     "41898282+github-actions[bot]@users.noreply.github.com",
@@ -12,9 +10,7 @@
   "packageRules": [
     {
       "groupName": null,
-      "matchPackageNames": [
-        "rolldown"
-      ]
+      "matchPackageNames": ["rolldown"]
     }
   ]
 }
