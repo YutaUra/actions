@@ -26,7 +26,9 @@ export const run = async (inputs: Inputs) => {
   ok(headRef, "Expected head ref");
   await git.fetch(inputs.cwd, inputs.token, base, head);
   await git.checkout(inputs.cwd, head);
+
   const { packages } = await getPackages(inputs.cwd);
+
   for (const pkg of packages) {
     const readmePath = join(pkg.dir, "README.md");
     if (!existsSync(readmePath)) continue;
@@ -37,6 +39,7 @@ export const run = async (inputs: Inputs) => {
     const actionYaml = parse(
       await readFile(actionYamlPath, "utf-8"),
     ) as GithubAction;
+
     // update action version
     const updatedReadme = updateReadme({
       readme,
@@ -46,20 +49,25 @@ export const run = async (inputs: Inputs) => {
       })),
       actionYaml,
     });
+
     await writeFile(readmePath, updatedReadme);
   }
+
   // if git status is dirty, commit and push
   if (!(await git.isDirty(inputs.cwd))) {
     info("No changes");
     return;
   }
+
   if (inputs["setup-git-user"]) {
     await git.configure(inputs.cwd);
   }
+
   // commit, pull --rebase and push
   await git.commitAll(inputs.cwd, "chore: update readme");
   await git.pullRebase(inputs.cwd, inputs.token, headRef);
   await git.push(inputs.cwd, inputs.token, headRef, true);
+
   // pr should be updated, so this action should be failed
   throw new Error("some files are updated, this PR should be updated");
 };
