@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.18
+
+### Patch Changes
+
+- 6e8ef12: fix(deps): update all non-major dependencies
+
 ## 0.0.17
 
 ### Patch Changes
