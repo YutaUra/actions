@@ -1,6 +1,6 @@
 {
   "name": "update-action-readme",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "type": "module",
   "scripts": {
     "generate": "github-action-yaml ./src/generated/github-action.ts",
