@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.20
+
+### Patch Changes
+
+- 4891a3a: fix(deps): update dependency github-action-yaml to v0.0.7
+
 ## 0.0.19
 
 ## 0.0.18
