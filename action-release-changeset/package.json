@@ -16,7 +16,7 @@
     "@actions/github": "6.0.0",
     "@changesets/read": "0.6.2",
     "@manypkg/get-packages": "2.2.2",
-    "github-action-yaml": "0.0.5",
+    "github-action-yaml": "0.0.7",
     "mdast-util-to-string": "4.0.0",
     "prettier": "3.4.2",
     "remark-parse": "11.0.0",
