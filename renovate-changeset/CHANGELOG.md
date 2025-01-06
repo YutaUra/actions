@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.21
+
+### Patch Changes
+
+- 662156a: fix(deps): update all non-major dependencies
+
 ## 0.0.20
 
 ### Patch Changes
