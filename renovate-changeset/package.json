@@ -11,7 +11,7 @@
   "author": "YutaUra",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "22.10.2",
+    "@types/node": "22.10.4",
     "rolldown": "0.14.0",
     "typescript": "5.7.2"
   },
