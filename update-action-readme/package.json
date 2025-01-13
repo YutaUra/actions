@@ -12,16 +12,16 @@
   "license": "ISC",
   "devDependencies": {
     "@schemastore/github-action": "0.0.5",
-    "@types/node": "22.10.4",
+    "@types/node": "22.10.5",
     "rolldown": "0.14.0",
-    "typescript": "5.7.2"
+    "typescript": "5.7.3"
   },
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.0",
     "@manypkg/get-packages": "2.2.2",
-    "github-action-yaml": "0.0.7",
+    "github-action-yaml": "0.0.8",
     "markdown-table": "3.0.4",
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",

@@ -11,16 +11,16 @@
   "author": "YutaUra",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "22.10.4",
+    "@types/node": "22.10.5",
     "rolldown": "0.14.0",
-    "typescript": "5.7.2"
+    "typescript": "5.7.3"
   },
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.0",
     "@manypkg/get-packages": "2.2.2",
-    "github-action-yaml": "0.0.7",
+    "github-action-yaml": "0.0.8",
     "sanitize-filename": "1.6.3"
   }
 }
