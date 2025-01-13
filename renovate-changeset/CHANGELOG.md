@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.22
+
+### Patch Changes
+
+- 9bc1d24: fix(deps): update all non-major dependencies
+
 ## 0.0.21
 
 ### Patch Changes
