@@ -23,7 +23,7 @@ jobs:
       'renovate[bot]'
     steps:
       - uses: actions/checkout@v4
-      - uses: YutaUra/actions/renovate-changeset@0.0.22
+      - uses: YutaUra/actions/renovate-changeset@0.0.23
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
