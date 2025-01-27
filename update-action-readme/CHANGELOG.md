@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.24
+
+### Patch Changes
+
+- ae0603d: fix(deps): update all non-major dependencies
+
 ## 0.0.23
 
 ### Patch Changes
