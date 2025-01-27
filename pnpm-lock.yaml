@@ -19,7 +19,7 @@ importers:
         version: 2.0.5
       vitest:
         specifier: 2.1.8
-        version: 2.1.8(@types/node@22.10.7)(msw@2.4.9(typescript@5.7.3))
+        version: 2.1.8(@types/node@22.10.10)(msw@2.4.9(typescript@5.7.3))
 
   action-release-changeset:
     dependencies:
@@ -39,8 +39,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2
       github-action-yaml:
-        specifier: 0.0.9
-        version: 0.0.9(@actions/core@1.11.1)
+        specifier: 0.0.10
+        version: 0.0.10(@actions/core@1.11.1)
       mdast-util-to-string:
         specifier: 4.0.0
         version: 4.0.0
@@ -67,8 +67,8 @@ importers:
         specifier: 6.0.0
         version: 6.0.0
       '@types/node':
-        specifier: 22.10.7
-        version: 22.10.7
+        specifier: 22.10.10
+        version: 22.10.10
       '@types/semver':
         specifier: 7.5.8
         version: 7.5.8
@@ -97,15 +97,15 @@ importers:
         specifier: 2.2.2
         version: 2.2.2
       github-action-yaml:
-        specifier: 0.0.9
-        version: 0.0.9(@actions/core@1.11.1)
+        specifier: 0.0.10
+        version: 0.0.10(@actions/core@1.11.1)
       sanitize-filename:
         specifier: 1.6.3
         version: 1.6.3
     devDependencies:
       '@types/node':
-        specifier: 22.10.7
-        version: 22.10.7
+        specifier: 22.10.10
+        version: 22.10.10
       rolldown:
         specifier: 0.14.0
         version: 0.14.0
@@ -128,8 +128,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2
       github-action-yaml:
-        specifier: 0.0.9
-        version: 0.0.9(@actions/core@1.11.1)
+        specifier: 0.0.10
+        version: 0.0.10(@actions/core@1.11.1)
       markdown-table:
         specifier: 3.0.4
         version: 3.0.4
@@ -156,8 +156,8 @@ importers:
         specifier: 0.0.5
         version: 0.0.5
       '@types/node':
-        specifier: 22.10.7
-        version: 22.10.7
+        specifier: 22.10.10
+        version: 22.10.10
       rolldown:
         specifier: 0.14.0
         version: 0.14.0
@@ -745,8 +745,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@22.10.7':
-    resolution: {integrity: sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==}
+  '@types/node@22.10.10':
+    resolution: {integrity: sha512-X47y/mPNzxviAGY5TcYPtYL8JsY3kAq2n8fMmKoRCxq/c4v4pyGNCzM2R6+M5/umG4ZfHuT+sgqDYqWc9rJ6ww==}
 
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
@@ -1104,8 +1104,8 @@ packages:
     resolution: {integrity: sha512-g0QYk1dZBxGwk+Ngc+ltRH2IBp2f7zBkBMBJZCDerh6EhlhSR6+9irMCuT/09zD6qkarHUSn529sK/yL4S27mg==}
     engines: {node: '>= 0.4'}
 
-  github-action-yaml@0.0.9:
-    resolution: {integrity: sha512-UVWbv/4d3zUq7N1aJsnOC23vBe/KpIg5NQFUDJGD/zE4qsd/4Ff+EHxEQO3y4hPtg+6Vg6erdP32JZETTVxEZw==}
+  github-action-yaml@0.0.10:
+    resolution: {integrity: sha512-G2QiUgXqll/aRy0GzWNDgGS+5YJ6ySwwAUpZgzYDj8nUoigSR2+BpZKL/2a39Q3PDhwX2UrDeEVPgMhjXugUnQ==}
     hasBin: true
     peerDependencies:
       '@actions/core': 1.11.1
@@ -2285,7 +2285,7 @@ snapshots:
       '@inquirer/figures': 1.0.6
       '@inquirer/type': 2.0.0
       '@types/mute-stream': 0.0.4
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -2562,12 +2562,12 @@ snapshots:
 
   '@types/mute-stream@0.0.4':
     dependencies:
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
     optional: true
 
   '@types/node@12.20.55': {}
 
-  '@types/node@22.10.7':
+  '@types/node@22.10.10':
     dependencies:
       undici-types: 6.20.0
 
@@ -2591,14 +2591,14 @@ snapshots:
       chai: 5.1.2
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.8(msw@2.4.9(typescript@5.7.3))(vite@5.4.8(@types/node@22.10.7))':
+  '@vitest/mocker@2.1.8(msw@2.4.9(typescript@5.7.3))(vite@5.4.8(@types/node@22.10.10))':
     dependencies:
       '@vitest/spy': 2.1.8
       estree-walker: 3.0.3
       magic-string: 0.30.12
     optionalDependencies:
       msw: 2.4.9(typescript@5.7.3)
-      vite: 5.4.8(@types/node@22.10.7)
+      vite: 5.4.8(@types/node@22.10.10)
 
   '@vitest/pretty-format@2.1.8':
     dependencies:
@@ -3011,7 +3011,7 @@ snapshots:
       es-errors: 1.3.0
       get-intrinsic: 1.2.4
 
-  github-action-yaml@0.0.9(@actions/core@1.11.1):
+  github-action-yaml@0.0.10(@actions/core@1.11.1):
     dependencies:
       '@actions/core': 1.11.1
       '@schemastore/github-action': 0.0.5
@@ -3894,13 +3894,13 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite-node@2.1.8(@types/node@22.10.7):
+  vite-node@2.1.8(@types/node@22.10.10):
     dependencies:
       cac: 6.7.14
       debug: 4.3.7
       es-module-lexer: 1.5.4
       pathe: 1.1.2
-      vite: 5.4.8(@types/node@22.10.7)
+      vite: 5.4.8(@types/node@22.10.10)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3912,19 +3912,19 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.4.8(@types/node@22.10.7):
+  vite@5.4.8(@types/node@22.10.10):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.22.5
     optionalDependencies:
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       fsevents: 2.3.3
 
-  vitest@2.1.8(@types/node@22.10.7)(msw@2.4.9(typescript@5.7.3)):
+  vitest@2.1.8(@types/node@22.10.10)(msw@2.4.9(typescript@5.7.3)):
     dependencies:
       '@vitest/expect': 2.1.8
-      '@vitest/mocker': 2.1.8(msw@2.4.9(typescript@5.7.3))(vite@5.4.8(@types/node@22.10.7))
+      '@vitest/mocker': 2.1.8(msw@2.4.9(typescript@5.7.3))(vite@5.4.8(@types/node@22.10.10))
       '@vitest/pretty-format': 2.1.8
       '@vitest/runner': 2.1.8
       '@vitest/snapshot': 2.1.8
@@ -3940,11 +3940,11 @@ snapshots:
       tinyexec: 0.3.1
       tinypool: 1.0.1
       tinyrainbow: 1.2.0
-      vite: 5.4.8(@types/node@22.10.7)
-      vite-node: 2.1.8(@types/node@22.10.7)
+      vite: 5.4.8(@types/node@22.10.10)
+      vite-node: 2.1.8(@types/node@22.10.10)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
     transitivePeerDependencies:
       - less
       - lightningcss
