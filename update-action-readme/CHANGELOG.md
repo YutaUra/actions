@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.25
+
+### Patch Changes
+
+- bc79eea: fix(deps): update all non-major dependencies
+
 ## 0.0.24
 
 ### Patch Changes
