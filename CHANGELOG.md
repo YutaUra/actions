@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.27
+
+### Patch Changes
+
+- c96388f: chore(deps): update dependency vitest to v3
+
 ## 0.0.26
 
 ### Patch Changes
