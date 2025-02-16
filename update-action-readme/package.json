@@ -13,7 +13,7 @@
   "devDependencies": {
     "@schemastore/github-action": "0.0.5",
     "@types/node": "22.13.1",
-    "rolldown": "0.14.0",
+    "rolldown": "0.15.1",
     "typescript": "5.7.3"
   },
   "dependencies": {
