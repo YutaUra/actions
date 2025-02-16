@@ -5,14 +5,14 @@
   "scripts": {
     "generate": "github-action-yaml ./src/generated/github-action.ts",
     "prebuild": "pnpm generate",
-    "build": "rolldown -c rolldown.config.mjs"
+    "build": "tsup src/main.ts --format cjs --target node20"
   },
   "keywords": [],
   "author": "YutaUra",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "22.13.1",
-    "rolldown": "0.14.0",
+    "tsup": "8.3.6",
     "typescript": "5.7.3"
   },
   "dependencies": {
