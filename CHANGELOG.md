@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.26
+
+### Patch Changes
+
+- 5364280: chore(deps): update pnpm to v10
+
 ## 0.0.25
 
 ### Patch Changes
