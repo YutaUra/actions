@@ -1,5 +1,12 @@
 # renovate-changeset
 
+## 0.0.28
+
+### Patch Changes
+
+- b8b0a99: migrate rolldown to tsup
+- b905580: fix(deps): update all non-major dependencies
+
 ## 0.0.27
 
 ## 0.0.26
