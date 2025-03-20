@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.28
+
+### Patch Changes
+
+- b905580: fix(deps): update all non-major dependencies
+
 ## 0.0.27
 
 ### Patch Changes
