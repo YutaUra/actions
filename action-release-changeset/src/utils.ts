@@ -1,4 +1,4 @@
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { type Package, getPackages } from "@manypkg/get-packages";
@@ -209,7 +209,9 @@ export const updateChangelog = async (
 
 export const requireChangesetsCliPkgJson = (cwd: string) => {
   try {
-    return require(resolveFrom(cwd, "@changesets/cli/package.json"));
+    return JSON.parse(
+      readFileSync(resolveFrom(cwd, "@changesets/cli/package.json"), "utf-8"),
+    );
   } catch (err) {
     if (
       err &&
