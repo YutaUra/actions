@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.31
+
+### Patch Changes
+
+- 9df88a1: fix(deps): update all non-major dependencies
+
 ## 0.0.30
 
 ### Patch Changes
