@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.32
+
+### Patch Changes
+
+- 1974b0c: chore(deps): update all non-major dependencies
+
 ## 0.0.31
 
 ### Patch Changes
