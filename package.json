@@ -1,7 +1,7 @@
 {
   "name": "actions",
   "version": "0.0.31",
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@10.8.0",
   "scripts": {
     "build": "pnpm run --parallel build",
     "check": "biome check --fix",
