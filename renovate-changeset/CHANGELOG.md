@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.33
+
+### Patch Changes
+
+- e04151e: fix(deps): update all non-major dependencies
+
 ## 0.0.32
 
 ### Patch Changes
