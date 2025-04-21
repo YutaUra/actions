@@ -14,7 +14,7 @@
     "@actions/core": "1.11.1",
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.0",
-    "@changesets/read": "0.6.3",
+    "@changesets/read": "0.6.5",
     "@manypkg/get-packages": "2.2.2",
     "github-action-yaml": "0.0.13",
     "mdast-util-to-string": "4.0.0",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@changesets/types": "6.1.0",
-    "@types/node": "22.14.0",
+    "@types/node": "22.14.1",
     "@types/semver": "7.7.0",
     "glob": "11.0.1",
     "tsup": "8.4.0",
