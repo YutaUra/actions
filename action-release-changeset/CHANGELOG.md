@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.35
+
+### Patch Changes
+
+- 746b4db: chore(deps): update all non-major dependencies
+
 ## 0.0.34
 
 ### Patch Changes
