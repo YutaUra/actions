@@ -13,7 +13,7 @@
   "dependencies": {
     "@actions/core": "1.11.1",
     "@actions/exec": "1.1.1",
-    "@actions/github": "6.0.0",
+    "@actions/github": "6.0.1",
     "@changesets/read": "0.6.5",
     "@manypkg/get-packages": "2.2.2",
     "github-action-yaml": "0.0.13",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@changesets/types": "6.1.0",
-    "@types/node": "22.15.3",
+    "@types/node": "22.15.17",
     "@types/semver": "7.7.0",
     "glob": "11.0.2",
     "tsup": "8.4.0",
