@@ -22,12 +22,12 @@
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",
     "resolve-from": "5.0.0",
-    "semver": "7.7.1",
+    "semver": "7.7.2",
     "unified": "11.0.5"
   },
   "devDependencies": {
     "@changesets/types": "6.1.0",
-    "@types/node": "22.15.17",
+    "@types/node": "22.15.18",
     "@types/semver": "7.7.0",
     "glob": "11.0.2",
     "tsup": "8.4.0",
