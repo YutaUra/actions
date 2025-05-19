@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.37
+
+### Patch Changes
+
+- c569671: fix(deps): update all non-major dependencies
+
 ## 0.0.36
 
 ### Patch Changes
