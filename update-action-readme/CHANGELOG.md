@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.38
+
+### Patch Changes
+
+- 65bdd82: chore(deps): update all non-major dependencies
+
 ## 0.0.37
 
 ### Patch Changes
