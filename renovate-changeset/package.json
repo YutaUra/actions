@@ -11,8 +11,8 @@
   "author": "YutaUra",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "22.15.18",
-    "tsup": "8.4.0",
+    "@types/node": "22.15.21",
+    "tsup": "8.5.0",
     "typescript": "5.8.3"
   },
   "dependencies": {
