@@ -1,6 +1,6 @@
 # update-action-readme
 
-This is a GitHub Action to create changeset for Renovate.
+This GitHub Action updates the README files of GitHub Actions.
 
 ## Specification
 
