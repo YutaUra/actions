@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.40
+
+### Patch Changes
+
+- 3ca6052: chore(deps): update all non-major dependencies
+
 ## 0.0.39
 
 ### Patch Changes
