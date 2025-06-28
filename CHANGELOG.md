@@ -1,5 +1,7 @@
 # actions
 
+## 0.0.45
+
 ## 0.0.44
 
 ### Patch Changes
