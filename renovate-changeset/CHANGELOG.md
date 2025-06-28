@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.45
+
+### Patch Changes
+
+- 152de30: update bundle files
+
 ## 0.0.44
 
 ### Patch Changes
