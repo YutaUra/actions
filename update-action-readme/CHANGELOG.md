@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.44
+
+### Patch Changes
+
+- 8285c98: fix(deps): update dependency @manypkg/get-packages to v3
+
 ## 0.0.43
 
 ## 0.0.42
