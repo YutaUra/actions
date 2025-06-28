@@ -15,7 +15,7 @@
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.1",
     "@changesets/read": "0.6.5",
-    "@manypkg/get-packages": "2.2.2",
+    "@manypkg/get-packages": "3.0.0",
     "github-action-yaml": "0.0.13",
     "mdast-util-to-string": "4.0.0",
     "prettier": "3.5.3",
