@@ -1,11 +1,5 @@
 import { exec } from "node:child_process";
-import {
-  writeFile as _writeFile,
-  copyFile,
-  mkdir,
-  mkdtemp,
-  rm,
-} from "node:fs/promises";
+import { copyFile, mkdir, mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { dirname, join, relative } from "node:path";
 import { promisify } from "node:util";

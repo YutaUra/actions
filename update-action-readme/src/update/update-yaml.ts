@@ -1,5 +1,5 @@
 import { ok } from "node:assert";
-import { Scalar, YAMLMap, YAMLSeq, parseDocument } from "yaml";
+import { parseDocument, Scalar, YAMLMap, YAMLSeq } from "yaml";
 
 export type ReplaceActionVersion = {
   readonly name: string;

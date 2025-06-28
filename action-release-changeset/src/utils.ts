@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { type Package, getPackages } from "@manypkg/get-packages";
+import { getPackages, type Package } from "@manypkg/get-packages";
 import * as mdast from "mdast-util-to-string";
 import type prettier from "prettier";
 import remarkParse from "remark-parse";
@@ -34,7 +34,7 @@ export const getChangelogEntry = (changelog: string, version: string) => {
   let endIndex: number | undefined;
 
   for (let i = 0; i < nodes.length; i++) {
-    // biome-ignore lint/style/noNonNullAssertion: <explanation>
+    // biome-ignore lint/style/noNonNullAssertion: We are sure that nodes[i] is not null.
     const node = nodes[i]!;
     if (node.type === "heading") {
       const stringified: string = mdast.toString(node);
