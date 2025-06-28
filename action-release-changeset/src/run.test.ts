@@ -32,7 +32,7 @@ beforeEach(() => {
     headers: {},
   });
   mockPullsCreate.mockResolvedValue({
-    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+    // biome-ignore lint/suspicious/noExplicitAny: Because we are mocking
     data: { number: 0 } as any,
     status: 201,
     headers: {},
@@ -43,9 +43,13 @@ beforeEach(() => {
 class MockContext implements Context {
   readonly ref: string;
   readonly sha: string;
-  private constructor(base: Pick<Context, "ref" | "sha">) {
+  readonly runAttempt: number;
+  private constructor(
+    base: Pick<Context, "ref" | "sha"> & { runAttempt?: number },
+  ) {
     this.ref = base.ref;
     this.sha = base.sha;
+    this.runAttempt = base.runAttempt ?? 1;
   }
 
   static async create(cwd: string) {
@@ -339,7 +343,7 @@ describe("run", () => {
         // given
         mockPullsList.mockResolvedValue({
           status: 200,
-          // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+          // biome-ignore lint/suspicious/noExplicitAny: Because we are mocking
           data: [{ number: 1 } as any],
           headers: {},
           url: "",
@@ -630,7 +634,7 @@ describe("run", () => {
         // given
         mockPullsList.mockResolvedValue({
           status: 200,
-          // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+          // biome-ignore lint/suspicious/noExplicitAny: Because we are mocking
           data: [{ number: 1 } as any],
           headers: {},
           url: "",
