@@ -5,7 +5,7 @@
   "scripts": {
     "generate": "github-action-yaml ./src/generated/github-action.ts",
     "prebuild": "pnpm generate",
-    "build": "tsup src/main.ts --format esm --target node20"
+    "build": "tsup src/main.ts"
   },
   "keywords": [],
   "author": "YutaUra",
