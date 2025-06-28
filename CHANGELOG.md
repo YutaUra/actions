@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.43
+
+### Patch Changes
+
+- 13f7edd: chore(deps): update dependency @biomejs/biome to v2
+
 ## 0.0.42
 
 ### Patch Changes
