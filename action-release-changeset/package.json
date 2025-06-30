@@ -18,7 +18,7 @@
     "@manypkg/get-packages": "3.0.0",
     "github-action-yaml": "0.0.13",
     "mdast-util-to-string": "4.0.0",
-    "prettier": "3.5.3",
+    "prettier": "3.6.1",
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",
     "resolve-from": "5.0.0",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@changesets/types": "6.1.0",
-    "@types/node": "22.15.32",
+    "@types/node": "22.15.33",
     "@types/semver": "7.7.0",
     "glob": "11.0.3",
     "tsup": "8.5.0",
