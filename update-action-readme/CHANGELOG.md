@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.47
+
+### Patch Changes
+
+- a80738b: fix(deps): update all non-major dependencies
+
 ## 0.0.46
 
 ### Patch Changes
