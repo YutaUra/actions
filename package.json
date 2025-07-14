@@ -1,14 +1,14 @@
 {
   "name": "actions",
   "version": "0.0.47",
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.13.1",
   "scripts": {
     "build": "pnpm run --parallel build",
     "check": "biome check --fix",
     "test": "vitest"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.6",
+    "@biomejs/biome": "2.1.1",
     "@changesets/cli": "2.29.5",
     "@tsconfig/strictest": "2.0.5",
     "vitest": "3.2.4"
