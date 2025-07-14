@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.48
+
+### Patch Changes
+
+- 1c4f79e: fix(deps): update all non-major dependencies
+
 ## 0.0.47
 
 ### Patch Changes
