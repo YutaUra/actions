@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.49
+
+### Patch Changes
+
+- 9b4df86: fix(deps): update all non-major dependencies
+
 ## 0.0.48
 
 ### Patch Changes
