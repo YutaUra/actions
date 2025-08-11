@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.51
+
+### Patch Changes
+
+- 2096bec: fix(deps): update all non-major dependencies
+
 ## 0.0.50
 
 ### Patch Changes
