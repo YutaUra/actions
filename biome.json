@@ -40,6 +40,6 @@
     }
   },
   "files": {
-    "includes": ["**", "!**/generated/**"]
+    "includes": ["**", "!**/generated"]
   }
 }
