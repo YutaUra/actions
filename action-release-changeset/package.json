@@ -16,7 +16,7 @@
     "@actions/github": "6.0.1",
     "@changesets/read": "0.6.5",
     "@manypkg/get-packages": "3.1.0",
-    "github-action-yaml": "0.0.22",
+    "github-action-yaml": "0.0.23",
     "mdast-util-to-string": "4.0.0",
     "prettier": "3.6.2",
     "remark-parse": "11.0.0",
@@ -27,8 +27,8 @@
   },
   "devDependencies": {
     "@changesets/types": "6.1.0",
-    "@types/node": "22.17.2",
-    "@types/semver": "7.7.0",
+    "@types/node": "22.18.1",
+    "@types/semver": "7.7.1",
     "glob": "11.0.3",
     "tsup": "8.5.0",
     "typescript": "5.9.2"
