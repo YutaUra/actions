@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.54
+
+### Patch Changes
+
+- f74a1cd: fix(deps): update all non-major dependencies
+
 ## 0.0.53
 
 ### Patch Changes
