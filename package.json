@@ -8,8 +8,8 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.2",
-    "@changesets/cli": "2.29.6",
+    "@biomejs/biome": "2.2.4",
+    "@changesets/cli": "2.29.7",
     "@tsconfig/strictest": "2.0.5",
     "vitest": "3.2.4"
   }
