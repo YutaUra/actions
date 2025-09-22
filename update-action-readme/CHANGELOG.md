@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.56
+
+### Patch Changes
+
+- 1f40c76: fix(deps): update all non-major dependencies
+
 ## 0.0.55
 
 ### Patch Changes
