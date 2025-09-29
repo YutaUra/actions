@@ -21,7 +21,7 @@
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.1",
     "@manypkg/get-packages": "3.1.0",
-    "github-action-yaml": "0.0.25",
+    "github-action-yaml": "0.0.26",
     "markdown-table": "3.0.4",
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",
