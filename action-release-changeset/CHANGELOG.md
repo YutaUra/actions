@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.57
+
+### Patch Changes
+
+- cb1b161: fix(deps): update all non-major dependencies
+
 ## 0.0.56
 
 ### Patch Changes
