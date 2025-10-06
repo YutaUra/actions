@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.58
+
+### Patch Changes
+
+- db532c9: fix(deps): update all non-major dependencies
+
 ## 0.0.57
 
 ### Patch Changes
