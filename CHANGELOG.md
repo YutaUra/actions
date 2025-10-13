@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.59
+
+### Patch Changes
+
+- 9303e21: fix(deps): update all non-major dependencies
+
 ## 0.0.58
 
 ### Patch Changes
