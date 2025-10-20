@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.60
+
+### Patch Changes
+
+- 530001c: fix(deps): update all non-major dependencies
+
 ## 0.0.59
 
 ### Patch Changes
