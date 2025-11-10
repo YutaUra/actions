@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@schemastore/github-action": "0.0.6",
-    "@types/node": "22.18.13",
+    "@types/node": "22.19.0",
     "tsup": "8.5.0",
     "typescript": "5.9.3"
   },
@@ -21,7 +21,7 @@
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.1",
     "@manypkg/get-packages": "3.1.0",
-    "github-action-yaml": "0.0.31",
+    "github-action-yaml": "0.0.32",
     "markdown-table": "3.0.4",
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",
