@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.65
+
+### Patch Changes
+
+- 4a50a59: chore(deps): update dependency vitest to v4
+
 ## 0.0.64
 
 ### Patch Changes
