@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.64
+
+### Patch Changes
+
+- 7b11f90: chore(deps): update node.js to v24
+
 ## 0.0.63
 
 ### Patch Changes
