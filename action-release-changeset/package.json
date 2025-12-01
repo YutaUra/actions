@@ -14,11 +14,11 @@
     "@actions/core": "1.11.1",
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.1",
-    "@changesets/read": "0.6.5",
+    "@changesets/read": "0.6.6",
     "@manypkg/get-packages": "3.1.0",
-    "github-action-yaml": "0.0.32",
+    "github-action-yaml": "0.0.33",
     "mdast-util-to-string": "4.0.0",
-    "prettier": "3.6.2",
+    "prettier": "3.7.1",
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",
     "resolve-from": "5.0.0",
@@ -29,8 +29,8 @@
     "@changesets/types": "6.1.0",
     "@types/node": "24.10.1",
     "@types/semver": "7.7.1",
-    "glob": "11.0.3",
-    "tsup": "8.5.0",
+    "glob": "11.1.0",
+    "tsup": "8.5.1",
     "typescript": "5.9.3"
   }
 }

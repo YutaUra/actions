@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "24.10.1",
-    "tsup": "8.5.0",
+    "tsup": "8.5.1",
     "typescript": "5.9.3"
   },
   "dependencies": {
@@ -20,7 +20,7 @@
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.1",
     "@manypkg/get-packages": "3.1.0",
-    "github-action-yaml": "0.0.32",
+    "github-action-yaml": "0.0.33",
     "sanitize-filename": "1.6.3"
   }
 }
