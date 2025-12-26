@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@changesets/types": "6.1.0",
-    "@types/node": "24.10.3",
+    "@types/node": "24.10.4",
     "@types/semver": "7.7.1",
     "glob": "11.1.0",
     "tsup": "8.5.1",
