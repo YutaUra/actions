@@ -1,5 +1,12 @@
 # action-release-changeset
 
+## 0.0.70
+
+### Patch Changes
+
+- 6b3a3ee: fix(deps): update dependency @actions/core to v2
+- c98ff58: chore(deps): update dependency glob to v13
+
 ## 0.0.69
 
 ### Patch Changes
