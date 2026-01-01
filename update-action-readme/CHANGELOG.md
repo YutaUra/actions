@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.70
+
+### Patch Changes
+
+- 6b3a3ee: fix(deps): update dependency @actions/core to v2
+
 ## 0.0.69
 
 ### Patch Changes
