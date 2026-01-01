@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.71
+
+### Patch Changes
+
+- 7eb73b6: fix(deps): update dependency @actions/exec to v2
+
 ## 0.0.70
 
 ### Patch Changes
