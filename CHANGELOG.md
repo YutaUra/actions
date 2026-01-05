@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.72
+
+### Patch Changes
+
+- d3dce01: chore(deps): update all non-major dependencies
+
 ## 0.0.71
 
 ### Patch Changes
