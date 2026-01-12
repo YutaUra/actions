@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.73
+
+### Patch Changes
+
+- 2361700: fix(deps): update all non-major dependencies
+
 ## 0.0.72
 
 ## 0.0.71

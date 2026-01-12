@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: YutaUra/actions/update-action-readme@0.0.72
+      - uses: YutaUra/actions/update-action-readme@0.0.73
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
