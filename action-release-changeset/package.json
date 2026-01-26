@@ -18,7 +18,7 @@
     "@manypkg/get-packages": "3.1.0",
     "github-action-yaml": "0.0.35",
     "mdast-util-to-string": "4.0.0",
-    "prettier": "3.8.0",
+    "prettier": "3.8.1",
     "remark-parse": "11.0.0",
     "remark-stringify": "11.0.0",
     "resolve-from": "5.0.0",
