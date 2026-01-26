@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.75
+
+### Patch Changes
+
+- 65f3370: fix(deps): update all non-major dependencies
+
 ## 0.0.74
 
 ### Patch Changes
