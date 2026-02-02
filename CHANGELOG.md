@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.76
+
+### Patch Changes
+
+- 8874598: fix(deps): update all non-major dependencies
+
 ## 0.0.75
 
 ### Patch Changes
