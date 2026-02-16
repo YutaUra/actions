@@ -1,6 +1,6 @@
 {
   "name": "actions",
-  "version": "0.0.77",
+  "version": "0.0.78",
   "packageManager": "pnpm@10.29.3",
   "scripts": {
     "build": "pnpm run --parallel build",
