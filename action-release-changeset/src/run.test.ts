@@ -3,6 +3,9 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { promisify } from "node:util";
 import * as core from "@actions/core";
+
+vi.mock("@actions/core");
+
 import type { Context } from "@actions/github/lib/context";
 import type { WebhookPayload } from "@actions/github/lib/interfaces";
 import type { GitHub } from "@actions/github/lib/utils.js";
@@ -143,7 +146,6 @@ describe("run", () => {
 
       it("nothing todo", async () => {
         // given
-        const mockLog = vi.spyOn(core, "info");
         const { local } = await setupDirectory({ templateDir: TEMPLATE_DIR });
         const context = await MockContext.create(local.path);
 
@@ -151,7 +153,7 @@ describe("run", () => {
         await run({ ...inputs({ cwd: local.path }), context });
 
         // then
-        expect(mockLog).toHaveBeenCalledWith(
+        expect(core.info).toHaveBeenCalledWith(
           "All changesets are empty; not creating PR",
         );
       });
@@ -436,7 +438,6 @@ describe("run", () => {
 
       it("nothing todo", async () => {
         // given
-        const mockLog = vi.spyOn(core, "info");
         const { local } = await setupDirectory({ templateDir: TEMPLATE_DIR });
         const context = await MockContext.create(local.path);
 
@@ -444,7 +445,7 @@ describe("run", () => {
         await run({ ...inputs({ cwd: local.path }), context });
 
         // then
-        expect(mockLog).toHaveBeenCalledWith(
+        expect(core.info).toHaveBeenCalledWith(
           "All changesets are empty; not creating PR",
         );
       });
