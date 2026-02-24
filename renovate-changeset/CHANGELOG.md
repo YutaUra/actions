@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.80
+
+### Patch Changes
+
+- c63ccf8: fix(deps): update dependency @actions/github to v9
+
 ## 0.0.79
 
 ## 0.0.78
