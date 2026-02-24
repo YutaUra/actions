@@ -4,4 +4,5 @@ export default defineConfig({
   format: "cjs",
   target: "node20",
   noExternal: [/(.*)/],
+  shims: true,
 });
