@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.82
+
+### Patch Changes
+
+- d246908: fix(deps): update dependency @actions/core to v3
+
 ## 0.0.81
 
 ### Patch Changes
