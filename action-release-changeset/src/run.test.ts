@@ -5,6 +5,7 @@ import { promisify } from "node:util";
 import * as core from "@actions/core";
 
 vi.mock("@actions/core");
+
 import type { Context } from "@actions/github/lib/context";
 import type { WebhookPayload } from "@actions/github/lib/interfaces";
 import type { GitHub } from "@actions/github/lib/utils.js";
