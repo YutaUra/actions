@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.81
+
+### Patch Changes
+
+- 51fe5a2: fix(deps): update dependency @actions/exec to v3
+
 ## 0.0.80
 
 ### Patch Changes
