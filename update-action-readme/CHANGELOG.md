@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.83
+
+### Patch Changes
+
+- f2cac47: chore(deps): update all non-major dependencies
+
 ## 0.0.82
 
 ### Patch Changes

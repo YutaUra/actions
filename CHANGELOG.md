@@ -1,5 +1,12 @@
 # actions
 
+## 0.0.83
+
+### Patch Changes
+
+- f2cac47: chore(deps): update all non-major dependencies
+- 52d86ce: chore(deps): lock file maintenance
+
 ## 0.0.82
 
 ### Patch Changes
