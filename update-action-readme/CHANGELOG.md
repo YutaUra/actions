@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.84
+
+### Patch Changes
+
+- 254f59b: fix(deps): update all non-major dependencies
+
 ## 0.0.83
 
 ### Patch Changes
