@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.86
+
+### Patch Changes
+
+- a09903b: chore(deps): update all non-major dependencies
+
 ## 0.0.85
 
 ### Patch Changes
