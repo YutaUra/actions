@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.88
+
+### Patch Changes
+
+- 7dc7285: fix(deps): update all non-major dependencies
+
 ## 0.0.87
 
 ## 0.0.86
