@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.90
+
+### Patch Changes
+
+- 751ca03: fix(deps): update all non-major dependencies
+
 ## 0.0.89
 
 ## 0.0.88
