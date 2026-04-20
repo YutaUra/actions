@@ -1,5 +1,12 @@
 # actions
 
+## 0.0.92
+
+### Patch Changes
+
+- 374187a: fix(deps): update all non-major dependencies
+- 834b353: chore(deps): lock file maintenance
+
 ## 0.0.91
 
 ### Patch Changes
