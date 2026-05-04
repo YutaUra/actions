@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.93
+
+### Patch Changes
+
+- 10c6954: fix(deps): update all non-major dependencies
+
 ## 0.0.92
 
 ## 0.0.91
