@@ -33,6 +33,6 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           setup-git-user: false
 
-      - uses: int128/update-generated-files-action@0f1bbcef10eaff55c52bc9f9278a6ceeeb1beda3 # v2.89.0
+      - uses: int128/update-generated-files-action@03546ede83dedaefaed68cb5f79d08e14107af1c # v2.93.0
         with:
           token: ${{ steps.app-token.outputs.token }}
