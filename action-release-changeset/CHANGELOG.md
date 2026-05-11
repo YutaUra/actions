@@ -1,5 +1,7 @@
 # action-release-changeset
 
+## 0.0.96
+
 ## 0.0.95
 
 ### Patch Changes
