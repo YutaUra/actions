@@ -1,5 +1,7 @@
 # update-action-readme
 
+## 0.0.96
+
 ## 0.0.95
 
 ### Patch Changes
