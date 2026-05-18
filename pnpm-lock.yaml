@@ -153,8 +153,8 @@ importers:
         version: 2.9.0
     devDependencies:
       '@schemastore/github-action':
-        specifier: 0.0.6
-        version: 0.0.6
+        specifier: 1.0.3
+        version: 1.0.3
       '@types/node':
         specifier: 24.12.4
         version: 24.12.4
@@ -807,6 +807,9 @@ packages:
 
   '@schemastore/github-action@0.0.6':
     resolution: {integrity: sha512-493EZr41jHt1hQm3sUX6s7CiYpgmQ/6kVMe7w4Jqv1vI4R+HbM+qnmGYcYhmKY2o54G0rbw3vsSXqrGLAk3V3Q==}
+
+  '@schemastore/github-action@1.0.3':
+    resolution: {integrity: sha512-X41FGReGQmWI4iK6ofVPoUymPCERsrFMgSbnMwHVl2urITKwGC7DuG5JxdIszVdyUemf/wj788JBLEWomjgM8g==}
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -2750,6 +2753,8 @@ snapshots:
     optional: true
 
   '@schemastore/github-action@0.0.6': {}
+
+  '@schemastore/github-action@1.0.3': {}
 
   '@standard-schema/spec@1.1.0': {}
 
