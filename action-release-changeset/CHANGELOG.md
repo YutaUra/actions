@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.99
+
+### Patch Changes
+
+- 8bfbc34: fix(deps): update all non-major dependencies
+
 ## 0.0.98
 
 ### Patch Changes
