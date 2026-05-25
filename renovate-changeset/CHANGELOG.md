@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.100
+
+### Patch Changes
+
+- cd1a9f0: chore(deps): lock file maintenance
+
 ## 0.0.99
 
 ## 0.0.98
