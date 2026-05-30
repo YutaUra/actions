@@ -1,5 +1,12 @@
 # update-action-readme
 
+## 0.0.101
+
+### Patch Changes
+
+- 00170d1: chore(deps): update dependency @schemastore/github-action to v1
+- f67b6f7: chore(deps): update dependency typescript to v6
+
 ## 0.0.100
 
 ### Patch Changes

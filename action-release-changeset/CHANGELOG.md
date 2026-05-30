@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.101
+
+### Patch Changes
+
+- f67b6f7: chore(deps): update dependency typescript to v6
+
 ## 0.0.100
 
 ### Patch Changes
