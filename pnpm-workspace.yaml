@@ -3,3 +3,5 @@ packages:
   - "action-release-changeset"
   - "renovate-changeset"
   - "update-action-readme"
+allowBuilds:
+  esbuild: true
