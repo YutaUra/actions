@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.102
+
+### Patch Changes
+
+- a1d238a: fix(deps): update all non-major dependencies
+
 ## 0.0.101
 
 ### Patch Changes
