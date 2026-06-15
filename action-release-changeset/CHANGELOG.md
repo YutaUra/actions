@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.103
+
+### Patch Changes
+
+- d65a438: fix(deps): update all non-major dependencies
+
 ## 0.0.102
 
 ### Patch Changes
