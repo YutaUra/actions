@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.104
+
+### Patch Changes
+
+- 48759e8: chore(deps): lock file maintenance
+
 ## 0.0.103
 
 ### Patch Changes
