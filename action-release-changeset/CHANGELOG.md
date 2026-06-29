@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.106
+
+### Patch Changes
+
+- 58a4171: fix(deps): update all non-major dependencies
+
 ## 0.0.105
 
 ## 0.0.104
