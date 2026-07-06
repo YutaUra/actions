@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.107
+
+### Patch Changes
+
+- 30e5bcf: fix(deps): update all non-major dependencies
+
 ## 0.0.106
 
 ### Patch Changes
