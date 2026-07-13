@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.108
+
+### Patch Changes
+
+- 1c4ab1f: fix(deps): update all non-major npm dependencies
+
 ## 0.0.107
 
 ## 0.0.106
