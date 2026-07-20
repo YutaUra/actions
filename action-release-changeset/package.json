@@ -1,6 +1,6 @@
 {
   "name": "action-release-changeset",
-  "version": "0.0.108",
+  "version": "0.0.109",
   "type": "module",
   "scripts": {
     "generate": "github-action-yaml ./src/generated/github-action.ts",
