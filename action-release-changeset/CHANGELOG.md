@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.110
+
+### Patch Changes
+
+- 671e736: fix(deps): update all non-major npm dependencies
+
 ## 0.0.109
 
 ## 0.0.108
