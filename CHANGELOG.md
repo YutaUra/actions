@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.111
+
+### Patch Changes
+
+- fb771ec: chore(deps): update all non-major npm dependencies
+
 ## 0.0.110
 
 ### Patch Changes
