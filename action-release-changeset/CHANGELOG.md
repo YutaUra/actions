@@ -1,5 +1,11 @@
 # action-release-changeset
 
+## 0.0.112
+
+### Patch Changes
+
+- 90f061f: chore(deps): update all non-major npm dependencies
+
 ## 0.0.111
 
 ## 0.0.110
