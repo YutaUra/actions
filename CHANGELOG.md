@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.113
+
+### Patch Changes
+
+- d108ce7: chore(deps): update all non-major npm dependencies
+
 ## 0.0.112
 
 ### Patch Changes
