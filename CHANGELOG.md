@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.116
+
+### Patch Changes
+
+- cc8ea5d: chore(deps): update all non-major npm dependencies
+
 ## 0.0.115
 
 ### Patch Changes
