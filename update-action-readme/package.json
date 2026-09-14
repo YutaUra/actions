@@ -11,8 +11,8 @@
   "author": "YutaUra",
   "license": "ISC",
   "devDependencies": {
-    "@schemastore/github-action": "1.0.3",
-    "@types/node": "24.13.3",
+    "@schemastore/github-action": "1.0.4",
+    "@types/node": "24.13.4",
     "tsup": "8.5.1",
     "typescript": "6.0.3"
   },
