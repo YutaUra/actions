@@ -1,5 +1,11 @@
 # renovate-changeset
 
+## 0.0.118
+
+### Patch Changes
+
+- b490c86: fix(deps): update all non-major npm dependencies
+
 ## 0.0.117
 
 ### Patch Changes
