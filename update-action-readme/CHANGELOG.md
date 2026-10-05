@@ -1,5 +1,11 @@
 # update-action-readme
 
+## 0.0.120
+
+### Patch Changes
+
+- d82b3e9: chore(deps): update all non-major npm dependencies
+
 ## 0.0.119
 
 ### Patch Changes
