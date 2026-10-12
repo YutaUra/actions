@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.121
+
+### Patch Changes
+
+- 6cf2208: chore(deps): update pnpm to v11.28.5
+
 ## 0.0.120
 
 ### Patch Changes
