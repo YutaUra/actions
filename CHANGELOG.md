@@ -1,5 +1,11 @@
 # actions
 
+## 0.0.122
+
+### Patch Changes
+
+- 03bbe7d: fix(deps): update all non-major npm dependencies
+
 ## 0.0.121
 
 ### Patch Changes
